@@ -1,0 +1,26 @@
+Contexte :
+Dans un système solaire fictif, les temps de trajet entre différentes planètes varient en fonction de plusieurs facteurs, notamment la distance entre les planètes, la présence de champs gravitationnels intermédiaires, et les technologies de propulsion disponibles. Votre mission est de développer un modèle prédictif capable d'estimer le temps de trajet entre deux planètes basé sur ces facteurs.
+
+Données :
+Vous disposez d'un dataset composé des colonnes suivantes :
+
+    Distance : la distance en millions de kilomètres entre les deux planètes.
+    Gravitational_Force : une mesure de la force gravitationnelle moyenne (en unités arbitraires) sur le trajet, qui peut affecter la vitesse du vaisseau.
+    Propulsion_Technology : une variable catégorielle indiquant le type de technologie de propulsion utilisée pour le trajet (1 pour la technologie de base, 2 pour la technologie avancée, etc.).
+    Travel_Time : le temps de trajet réel mesuré en jours.
+
+Objectif :
+Votre objectif est de créer un modèle de régression linéaire polynomiale qui utilise ces variables pour prédire Travel_Time. Vous devrez traiter la variable catégorielle Propulsion_Technology de manière appropriée avant de l'intégrer dans votre modèle.
+
+Instructions :
+
+    Chargez et explorez le dataset pour comprendre la distribution de chaque variable.
+    Pré-traitez les données si nécessaire (gestion des valeurs manquantes, encodage des variables catégorielles, etc.).
+    Créez des caractéristiques polynomiales à partir des variables numériques pour capturer les relations non linéaires entre les caractéristiques et la variable cible.
+    Divisez le dataset en ensembles d'entraînement et de test.
+    Entraînez un modèle de régression linéaire polynomiale sur l'ensemble d'entraînement.
+    Évaluez les performances de votre modèle sur l'ensemble de test en utilisant des métriques appropriées (par exemple, RMSE, R²).
+    Ajustez les degrés des polynômes et comparez les performances des modèles pour trouver le meilleur ajustement.
+
+Résultat attendu :
+Un rapport détaillant la démarche suivie, le degré du polynôme choisi, les performances du modèle, ainsi que des visualisations illustrant la qualité des prédictions du modèle par rapport aux données réelles.
