@@ -1,0 +1,1 @@
+A partir du Dataset suivant, vous devez entrainer un model qui puisse prédire la variable "colonisable" en fonction des autres variables.
