@@ -44,10 +44,10 @@ planets_df = planets_df.sample(frac=1).reset_index(drop=True)
 
 print(planets_df['Colonisable'].value_counts())
 
-# Suréchantillonnage des données pour la classe minoritaire
-minority_class = planets_df[planets_df['Colonisable'] == 1]
-oversampled = minority_class.sample(n=10000, replace=True)
-planets_df = pd.concat([planets_df, oversampled], ignore_index=True)
+# # Suréchantillonnage des données pour la classe minoritaire
+# minority_class = planets_df[planets_df['Colonisable'] == 1]
+# oversampled = minority_class.sample(n=10000, replace=True)
+# planets_df = pd.concat([planets_df, oversampled], ignore_index=True)
 
 
 # Enregistrement du DataFrame dans un fichier CSV (optionnel)
